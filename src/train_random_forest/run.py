@@ -112,7 +112,7 @@ def go(args):
     # you just created to add the "random_forest_dir" directory to the artifact, and finally use
     # run.log_artifact to log the artifact to the run
     artifact = wandb.Artifact(
-        artifact_name=arg.output_artifact,
+        artifact_name=args.output_artifact,
         type="model_export",
         description="Random Forest Pipeline export",
         metadata=rf_config,
