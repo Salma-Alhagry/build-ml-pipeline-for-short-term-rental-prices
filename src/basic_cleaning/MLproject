@@ -6,27 +6,27 @@ entry_points:
     parameters:
 
       input_artifact:
-        description: The input artifact
+        description: Name of the input artifact contained in W&B
         type: string
 
-       output_artifact:
-        description: The name of output artifact
+      output_artifact:
+        description: Name of the output artifact to be uploaded in W&B
         type: string
 
-       output_type:
-        description: The type of the output artifact
+      output_type:
+        description: The type for the output artifact
         type: string
 
-       output_description:
-        description: The description of the output artifact
+      output_description:
+        description: A description for the output artifact
         type: string
 
-       min_price:
-        description: The minimum price to consider
+      min_price:
+        description: Min price to consider when filtering during data cleaning step
         type: float
 
-       max_price:
-        description: The Maximum price to consider
+      max_price:
+        description: Max price to consider when filtering during data cleaning step
         type: float
 
 
