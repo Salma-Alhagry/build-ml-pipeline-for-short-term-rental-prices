@@ -29,8 +29,6 @@ def go(args):
     df['last_review'] = pd.to_datetime(df['last_review'])
     logger.info(f"fix the type of last_review")
     
-    df = df[df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)]
-    logger.info(f"limit the area to nyc area")
     
     df.to_csv("clean_sample.csv", index=False)
     logger.info(f"data cleaned and saved to csv file")
