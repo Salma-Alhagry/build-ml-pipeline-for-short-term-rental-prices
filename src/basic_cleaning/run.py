@@ -71,28 +71,28 @@ if __name__ == "__main__":
         "--output_type", 
         type=str,
         help="The type of the output artifact",
-        required=True
+        required=False
     )
 
     parser.add_argument(
         "--output_description", 
         type=str,
         help="The description of the output artifact",
-        required=True
+        required=False
     )
 
     parser.add_argument(
         "--min_price", 
         type=float,
         help="The minimum price to consider",
-        required=True
+        required=False
     )
 
     parser.add_argument(
         "--max_price", 
         type=float,
         help="The Maximum price to consider",
-        required=True
+        required=False
     )
 
 
